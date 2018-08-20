@@ -29,7 +29,7 @@ gulp.task('assets', function() {
         .pipe(gulp.dest('./build/assets'));
 });
 
-gulp.task('default', [ 'html', 'css' ]);
+gulp.task('default', [ 'html', 'css', 'assets' ]);
 gulp.task('serve', function() {
     gulp.start( [ 'html', 'css', 'assets' ]);
 
